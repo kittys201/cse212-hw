@@ -43,11 +43,19 @@ public class PriorityQueue
         return highestPriorityItem.Value;
     }
 
+    /// <summary>
+    /// Check if the queue is empty
+    /// </summary>
+    /// <returns>True if the queue is empty, false otherwise</returns>
     public bool IsEmpty()
     {
         return Length == 0;
     }
 
+    /// <summary>
+    /// Get a string representation of the queue
+    /// </summary>
+    /// <returns>A string representing the queue</returns>
     public override string ToString()
     {
         return $"[{string.Join(", ", _queue)}]";
